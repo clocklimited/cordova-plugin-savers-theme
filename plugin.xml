@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-savers-theme" version="0.1.0">
+    <name>SaversTheme</name>
+    <description>Cordova Savers Theme</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,device</keywords>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SaversTheme">
+                <param name="ios-package" value="CDVSaversTheme"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVSaversTheme.h" />
+        <source-file src="src/ios/CDVSaversTheme.m" />
+    </platform>
+</plugin>
